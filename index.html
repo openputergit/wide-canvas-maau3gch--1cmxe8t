@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haneef Brother's - Premium Sarees</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        @keyframes nameLoop {
+            0%, 45% { opacity: 1; transform: translateY(0); }
+            50%, 95% { opacity: 0; transform: translateY(-20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-name {
+            animation: nameLoop 6s infinite;
+        }
+        .scroll-animate {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .scroll-animate.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 100;
+        }
+        .map-animation {
+            background: linear-gradient(45deg, #f3ec78, #af4261);
+            background-size: 200% 200%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-amber-700 to-red-800 text-white py-4 fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center">
+                <div class="animate-name">Haneef Brother's</div>
+                <div class="animate-name" style="animation-delay: 3s">హనీഫ్ బ్రదర్స్</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-12 bg-gradient-to-b from-amber-50 to-white">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold font-['Playfair_Display'] mb-6 text-amber-800">Haneef Brother's</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-700 max-w-3xl mx-auto">
+                Weaving tradition with elegance for over five decades, offering timeless sarees crafted from the finest textiles.
+            </p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white scroll-animate">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-8 text-amber-800">Where Luxury Meets Legacy</h2>
+            <div class="max-w-4xl mx-auto text-gray-700 text-lg leading-relaxed">
+                <p class="mb-4">Welcome to Haneef Brother's — Where Luxury Meets Legacy</p>
+                <p>For over five decades, Haneef Brother's has been a trusted name in premium wholesale sarees. Located in the heart of Pan Bazar, Subash Road, Secunderabad, we offer a beautiful range sourced from Banaras, Mau, Surat, Meena Cotton, Kolkata, Pallavi Cotton, and more. Discover timeless elegance, crafted for those who appreciate the art of fine textiles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-16 bg-amber-50 scroll-animate">
+        <div class="container mx-auto px-4 text-center">
+            <div class="text-2xl md:text-3xl font-bold text-amber-800 mb-8">
+                In business for over 50 years with over 100K+ successful deals across India
+            </div>
+            <div class="map-animation w-full h-64 rounded-lg shadow-lg"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white scroll-animate">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-amber-800">Our Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Product Cards -->
+                <div class="product-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://source.unsplash.com/800x600/?saree,indian" alt="Saree" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-xl mb-2">Banarasi Silk Saree</h3>
+                        <p class="text-gray-600">Exquisite handwoven silk with intricate zari work</p>
+                        <p class="text-amber-800 font-bold mt-2">₹15,999</p>
+                    </div>
+                </div>
+                <!-- Repeat for other products -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-amber-50 scroll-animate">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-8 text-amber-800">Connect With Us</h2>
+            <div class="flex flex-col items-center gap-4">
+                <a href="mailto:haneefbrothers50@gmail.com" class="text-xl hover:text-amber-800">
+                    <i class="bi bi-envelope-fill mr-2"></i>haneefbrothers50@gmail.com
+                </a>
+                <div class="flex gap-6 text-3xl">
+                    <a href="https://instagram.com/haneefbrothers" target="_blank" class="text-amber-800 hover:text-amber-600">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" class="text-amber-800 hover:text-amber-600">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+919701822257" target="_blank" class="whatsapp-btn bg-green-500 text-white p-4 rounded-full hover:bg-green-600 transition-colors">
+        <i class="bi bi-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Scroll Animation
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-animate').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Store Animation
+        const createShopperAnimation = () => {
+            // Add shopper animation logic here if needed
+        };
+
+        createShopperAnimation();
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
